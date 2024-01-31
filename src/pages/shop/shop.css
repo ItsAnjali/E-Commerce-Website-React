@@ -1,0 +1,53 @@
+.shopTitle {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.products {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto; /* Center the products container */
+}
+
+.product {
+    border-radius: 12px;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjusted to create space between image and description */
+    align-items: center;
+    overflow: hidden; /* Added to prevent overflow issues */
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.product img {
+    width: 80%; /* Make the image fill the container */
+    height: 155px; /* Maintain the aspect ratio */
+    border-bottom: 2px solid rgb(19, 19, 19); /* Border between image and description */
+}
+
+.product .description {
+    text-align: center;
+    padding: 10px;
+}
+
+.addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center; /* Center the text within the button */
+}
+
+.addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+}
